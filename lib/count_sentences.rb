@@ -3,7 +3,11 @@ require 'pry'
 class String
 
   def sentence?
-    
+    if self.end_width?(".")
+      true
+    else
+      false
+    end
   end
 
   def question?
