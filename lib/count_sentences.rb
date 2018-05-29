@@ -27,7 +27,8 @@ class String
   end
 
   def count_sentences
-    res = self.scan("/[!.?]+/")
+    res = []
+    res<<self.scan("/[!.?]+/")
     binding.pry
     return res.length
   end
